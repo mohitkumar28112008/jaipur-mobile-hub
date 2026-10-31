@@ -2,917 +2,555 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="google-site-verification" content="HzOJiUXQf3IRBr-45xzQWlgGUCx27A8LYO8NxobM600" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090909">
 <title>Jaipur Mobile Hub | Refurbished iPhones</title>
 
 <style>
-:root {
-  --bg:#090909;
-  --panel:#151515;
-  --gold:#d6ad60;
-  --gold-light:#f5d99b;
-  --white:#f7f5f0;
-  --muted:#aaa49a;
-  --border:rgba(214,173,96,.25);
+:root{
+  --bg:#090909;--panel:#151515;--gold:#d6ad60;
+  --light:#f5d99b;--white:#f7f5f0;--muted:#aaa49a;
+  --border:rgba(214,173,96,.25)
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--white);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  line-height:1.6
-}
+body{background:var(--bg);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
 button,input,select,textarea{font:inherit}
-button,a{-webkit-tap-highlight-color:transparent}
 button{cursor:pointer}
 a{color:inherit;text-decoration:none}
 .container{width:min(1180px,92%);margin:auto}
 .gold{color:var(--gold)}
-header{
-  position:sticky;top:0;z-index:20;
-  background:rgba(9,9,9,.95);
-  backdrop-filter:blur(15px);
-  border-bottom:1px solid var(--border)
-}
-.nav{
-  min-height:75px;display:flex;
-  justify-content:space-between;align-items:center;gap:15px
-}
-.brand{font-size:19px;font-weight:850;letter-spacing:.5px}
-.brand small{
-  display:block;color:var(--muted);
-  font-size:10px;letter-spacing:3px;font-weight:500
-}
+header{position:sticky;top:0;z-index:20;background:#090909f5;backdrop-filter:blur(15px);border-bottom:1px solid var(--border)}
+.nav{min-height:90px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.brand{font-size:34px;font-weight:900;letter-spacing:1.2px;line-height:1.2}
+.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:4px;font-weight:500;margin-top:5px}
 .nav-right{display:flex;align-items:center;gap:20px}
 .nav-link{font-size:14px;color:#ddd5c8}
-.cart-button,.btn{
-  border:0;border-radius:8px;
-  background:linear-gradient(135deg,var(--gold-light),var(--gold));
-  color:#17120a;font-weight:800;padding:11px 16px
-}
-.cart-count{
-  display:inline-grid;place-items:center;
-  min-width:21px;height:21px;margin-left:5px;
-  border-radius:50%;background:#17120a;
-  color:var(--gold-light);font-size:12px
-}
-.hero{
-  min-height:450px;display:grid;
-  grid-template-columns:1.1fr .9fr;
-  align-items:center;gap:35px;padding:65px 0
-}
-.eyebrow{
-  color:var(--gold);letter-spacing:3px;
-  text-transform:uppercase;font-size:11px;font-weight:800
-}
-h1{
-  font-size:clamp(40px,6vw,70px);
-  line-height:1.08;letter-spacing:-2px;margin:18px 0
-}
+.btn,.cart-button{border:0;border-radius:8px;background:linear-gradient(135deg,var(--light),var(--gold));color:#17120a;font-weight:800;padding:11px 17px}
+.hero{min-height:420px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;padding:60px 0}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:11px;font-weight:800}
+h1{font-size:clamp(40px,6vw,70px);line-height:1.08;letter-spacing:-2px;margin:18px 0}
 .hero p{color:var(--muted);max-width:520px}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn-outline{
-  border:1px solid var(--border);color:var(--gold-light);
-  background:transparent;padding:10px 17px;
-  border-radius:8px;font-weight:700
-}
-.hero-art{
-  min-height:310px;border:1px solid var(--border);
-  border-radius:24px;
-  background:radial-gradient(ellipse at center,#332718,#17130e 40%,#0d0d0d 75%);
-  display:grid;place-items:center;overflow:hidden;position:relative
-}
-.hero-art::before,.hero-art::after{
-  content:"";position:absolute;
-  width:145px;height:240px;border:2px solid #a88a50;
-  border-radius:30px;background:linear-gradient(145deg,#303030,#090909)
-}
-.hero-art::before{transform:rotate(-13deg) translateX(-28px)}
-.hero-art::after{transform:rotate(13deg) translateX(28px);border-color:#c3a66e}
-.hero-seal{
-  z-index:2;width:85px;height:85px;border-radius:50%;
-  display:grid;place-items:center;background:#15110b;
-  border:1px solid var(--gold);color:var(--gold-light);
-  font-size:28px;font-weight:800
-}
-.trust{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:14px;margin:0 auto 65px
-}
-.trust-item{
-  border:1px solid var(--border);border-radius:12px;
-  padding:17px;background:#101010;text-align:center
-}
-.trust-item strong{display:block;color:var(--gold-light)}
+.btn-outline{border:1px solid var(--border);color:var(--light);background:transparent;padding:10px 17px;border-radius:8px;font-weight:700}
+.hero-art{min-height:290px;border:1px solid var(--border);border-radius:24px;background:radial-gradient(ellipse at center,#332718,#17130e 45%,#0d0d0d 75%);display:grid;place-items:center}
+.hero-seal{width:100px;height:100px;border-radius:50%;display:grid;place-items:center;background:#15110b;border:1px solid var(--gold);color:var(--light);font-size:30px;font-weight:900}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:60px}
+.trust-item{border:1px solid var(--border);border-radius:12px;padding:17px;background:#101010;text-align:center}
+.trust-item strong{display:block;color:var(--light)}
 .trust-item span{font-size:12px;color:var(--muted)}
 .shop{padding:15px 0 70px}
-.section-head{
-  display:flex;justify-content:space-between;
-  align-items:end;gap:18px;margin-bottom:25px
-}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:25px}
 h2{font-size:clamp(27px,4vw,38px);line-height:1.2}
 .section-sub{color:var(--muted);font-size:14px;margin-top:7px}
-.filters{
-  display:grid;grid-template-columns:1fr 190px 175px;
-  gap:12px;margin-bottom:24px
-}
-.control{
-  width:100%;background:#131313;
-  border:1px solid #38332a;border-radius:8px;
-  padding:12px;color:var(--white);outline:none
-}
+.filters{display:grid;grid-template-columns:1fr 190px 175px;gap:12px;margin-bottom:24px}
+.control{width:100%;background:#131313;border:1px solid #38332a;border-radius:8px;padding:12px;color:var(--white);outline:none}
 .control:focus{border-color:var(--gold)}
 select option{background:#151515}
-.product-grid{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:19px
-}
-.product-card{
-  border:1px solid #29251e;border-radius:15px;
-  overflow:hidden;background:linear-gradient(155deg,#181818,#101010);
-  transition:transform .2s,border-color .2s
-}
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.product-card{border:1px solid #29251e;border-radius:15px;overflow:hidden;background:linear-gradient(155deg,#181818,#101010);transition:.2s}
 .product-card:hover{transform:translateY(-4px);border-color:#8f713d}
-.product-art{
-  height:230px;position:relative;overflow:hidden;
-  display:grid;place-items:center;
-  background:radial-gradient(ellipse at center,#29241b,#111 72%)
-}
-.product-tag{
-  position:absolute;top:13px;left:13px;z-index:2;
-  border:1px solid #8d713f;color:var(--gold-light);
-  background:#16120bd9;border-radius:20px;
-  font-size:10px;padding:4px 9px
-}
-.phone-illustration{
-  width:105px;height:178px;border:3px solid #777;
-  border-radius:23px;position:relative;
-  display:grid;place-items:center;color:var(--gold-light);
-  font-weight:800;font-size:22px;
-  background:linear-gradient(145deg,#343434,#080808);
-  box-shadow:12px 15px 25px #0009
-}
-.phone-illustration::before{
-  content:"";position:absolute;top:8px;left:8px;
-  width:28px;height:28px;border-radius:9px;
-  border:2px solid #777;
-  background:radial-gradient(circle,#555,#111 70%)
-}
+.product-art{height:245px;position:relative;overflow:hidden;background:radial-gradient(ellipse at center,#29241b,#111 72%);display:grid;place-items:center}
+.product-tag{position:absolute;top:13px;left:13px;z-index:2;border:1px solid #8d713f;color:var(--light);background:#16120bd9;border-radius:20px;font-size:10px;padding:4px 9px}
+.product-art img{width:100%;height:100%;object-fit:contain;padding:12px;display:block}
+.photo-placeholder{color:var(--gold);font-size:23px;font-weight:800;letter-spacing:2px;text-align:center}
 .product-info{padding:17px}
 .product-info h3{font-size:20px}
 .specs{color:var(--muted);font-size:12px;margin:5px 0 12px}
-.spec-row{
-  display:flex;justify-content:space-between;gap:8px;
-  padding:7px 0;border-bottom:1px solid #26231f;font-size:12px
-}
+.spec-row{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid #26231f;font-size:12px}
 .spec-row span:first-child{color:var(--muted)}
 .spec-row span:last-child{text-align:right}
-.price-row{
-  display:flex;align-items:center;justify-content:space-between;
-  gap:10px;margin-top:15px
-}
-.price{font-size:22px;font-weight:800;color:var(--gold-light)}
-.add-btn{
-  background:var(--gold);color:#161109;border:0;
-  border-radius:7px;padding:9px 12px;font-size:12px;font-weight:800
-}
-.details-btn{
-  margin-top:10px;width:100%;padding:9px;border-radius:7px;
-  border:1px solid #39342b;background:transparent;
-  color:#e4d4b1;font-size:12px
-}
+.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:15px}
+.price{font-size:22px;font-weight:800;color:var(--light)}
+.buy-btn{background:var(--gold);color:#161109;border:0;border-radius:7px;padding:10px 15px;font-size:13px;font-weight:900}
+.details-btn{margin-top:10px;width:100%;padding:9px;border-radius:7px;border:1px solid #39342b;background:transparent;color:#e4d4b1;font-size:12px}
 .empty-state{grid-column:1/-1;text-align:center;padding:45px;color:var(--muted)}
-.notice{
-  margin-top:20px;border:1px solid var(--border);
-  border-radius:10px;padding:15px;color:var(--muted);font-size:13px
-}
+.notice{margin-top:20px;border:1px solid var(--border);border-radius:10px;padding:15px;color:var(--muted);font-size:13px}
 .about{padding-bottom:65px}
 .query-section{padding:10px 0 70px}
-.content-panel{
-  border:1px solid var(--border);border-radius:15px;
-  background:linear-gradient(145deg,#181818,#101010);
-  padding:24px;max-width:700px
-}
-footer{
-  border-top:1px solid var(--border);
-  padding:30px 0;color:var(--muted);font-size:12px
-}
+.content-panel{border:1px solid var(--border);border-radius:15px;background:linear-gradient(145deg,#181818,#101010);padding:24px;max-width:700px}
+footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:12px}
 .footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.overlay{
-  position:fixed;inset:0;background:#000b;z-index:50;
-  display:none;justify-content:flex-end
-}
+.overlay{position:fixed;inset:0;background:#000b;z-index:50;display:none;justify-content:flex-end}
 .overlay.open{display:flex}
-.drawer{
-  width:min(460px,100%);height:100%;overflow-y:auto;
-  background:#111;border-left:1px solid var(--border);padding:22px
-}
-.drawer-head{
-  display:flex;justify-content:space-between;
-  align-items:center;gap:12px;margin-bottom:20px
-}
-.close-btn{
-  border:1px solid #444;background:transparent;
-  color:white;border-radius:7px;padding:6px 10px
-}
-.cart-item{
-  display:grid;grid-template-columns:1fr auto;
-  gap:12px;padding:15px 0;border-bottom:1px solid #302b23
-}
-.cart-item small{color:var(--muted);display:block}
-.qty{display:flex;align-items:center;gap:10px;margin-top:8px}
-.qty button{
-  width:28px;height:28px;border:1px solid #51452f;
-  color:var(--gold-light);background:#201b12;border-radius:5px
-}
-.remove-btn{background:none;border:0;color:#df8f81;font-size:12px;margin-top:5px}
-.total-line{
-  display:flex;justify-content:space-between;gap:10px;
-  margin-top:12px;color:var(--muted);font-size:14px
-}
-.total-line.final{
-  color:var(--gold-light);font-size:19px;font-weight:800;
-  border-top:1px solid var(--border);padding-top:13px
-}
-.full-btn{width:100%;margin-top:18px}
+.drawer{width:min(480px,100%);height:100%;overflow-y:auto;background:#111;border-left:1px solid var(--border);padding:22px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+.close-btn{border:1px solid #444;background:transparent;color:white;border-radius:7px;padding:6px 10px}
 .form-group{margin-top:14px}
 .form-group label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px}
 .form-group textarea{resize:vertical;min-height:75px}
 .form-note{color:var(--muted);font-size:12px;margin-top:12px}
-.message{
-  margin-top:14px;padding:13px;border:1px solid var(--border);
-  border-radius:8px;font-size:13px;overflow-wrap:anywhere
-}
-.payment-box{
-  margin-top:20px;border:1px solid var(--border);
-  background:#17140f;border-radius:13px;padding:18px;text-align:center
-}
-.qr-image{
-  display:block;width:min(100%,280px);height:auto;
-  aspect-ratio:1/1;object-fit:contain;
-  background:white;border-radius:8px;padding:8px;margin:15px auto
-}
+.full-btn{width:100%;margin-top:18px}
+.message{margin-top:14px;padding:13px;border:1px solid var(--border);border-radius:8px;font-size:13px;overflow-wrap:anywhere}
+.payment-box{margin-top:20px;border:1px solid var(--border);background:#17140f;border-radius:13px;padding:18px;text-align:center}
+.qr-image{display:block;width:min(100%,280px);height:auto;aspect-ratio:1/1;object-fit:contain;background:white;border-radius:8px;padding:8px;margin:15px auto}
 .payment-warning{color:#e8c98a;font-size:12px;margin-top:10px}
 .file-input{padding:10px}
-[hidden]{display:none!important}
-@media(max-width:800px){
-  .hero{grid-template-columns:1fr;padding:45px 0}
-  .hero-art{min-height:260px}
-  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .filters{grid-template-columns:1fr 1fr}
-  .filters input{grid-column:1/-1}
+
+/* Updated product gallery: show complete photo without cropping */
+.gallery-main{
+ height:420px;
+ min-height:260px;
+ background:#191610;
+ border:1px solid var(--border);
+ border-radius:12px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ overflow:hidden;
+ padding:10px;
 }
+.gallery-main img{
+ display:block;
+ width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:100%;
+ object-fit:contain;
+ object-position:center;
+ padding:0;
+}
+.gallery-thumbs{
+ display:grid;
+ grid-template-columns:repeat(4,minmax(0,1fr));
+ gap:9px;
+ margin-top:12px;
+}
+.gallery-thumb{
+ height:88px;
+ min-width:0;
+ border:1px solid #51452f;
+ background:#211c13;
+ border-radius:8px;
+ overflow:hidden;
+ padding:3px;
+}
+.gallery-thumb img{
+ display:block;
+ width:100%;
+ height:100%;
+ object-fit:contain;
+ object-position:center;
+}
+.gallery-thumb.active{border:2px solid var(--gold)}
+.detail-price{font-size:25px;color:var(--light);font-weight:900;margin-top:15px}
+[hidden]{display:none!important}
+
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr;padding:45px 0}
+ .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .filters{grid-template-columns:1fr 1fr}
+ .filters input{grid-column:1/-1}
+}
+
 @media(max-width:520px){
-  .nav{min-height:65px}
-  .brand{font-size:15px}
-  .brand small{font-size:9px}
-  .nav-right{gap:10px}
-  .nav-link{display:none}
-  .cart-button{padding:9px 10px;font-size:12px}
-  .trust{grid-template-columns:1fr;gap:9px}
-  .trust-item{display:flex;justify-content:space-between;text-align:left;align-items:center}
-  .section-head{align-items:start;flex-direction:column}
-  .product-grid{grid-template-columns:1fr}
-  .product-art{height:250px}
-  .filters{grid-template-columns:1fr}
-  .filters input{grid-column:auto}
-  h1{letter-spacing:-1px}
-  .content-panel{padding:17px}
+ .gallery-main{height:340px}
+ .gallery-thumb{height:68px}
+ .nav{min-height:75px}
+ .brand{font-size:22px}
+ .brand small{font-size:9px;letter-spacing:3px}
+ .nav-right{gap:10px}
+ .nav-link{display:none}
+ .trust{grid-template-columns:1fr;gap:9px}
+ .trust-item{display:flex;justify-content:space-between;text-align:left;align-items:center}
+ .section-head{align-items:start;flex-direction:column}
+ .product-grid{grid-template-columns:1fr}
+ .product-art{height:260px}
+ .filters{grid-template-columns:1fr}
+ .filters input{grid-column:auto}
+ h1{letter-spacing:-1px}
+ .content-panel{padding:17px}
+}
+/* Product card ki first photo - complete image */
+.product-art {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #191610;
+    padding: 12px;
+}
+
+.product-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain !important;
+    object-position: center;
+    padding: 0;
+    display: block;
 }
 </style>
 </head>
 
 <body>
 <header>
-  <div class="container nav">
-    <a class="brand" href="#">
-      JAIPUR <span class="gold">MOBILE HUB</span>
-      <small>REFURBISHED IPHONES</small>
-    </a>
-    <div class="nav-right">
-      <a class="nav-link" href="#shop">Shop iPhones</a>
-      <a class="nav-link" href="#queries">Queries</a>
-      <button class="cart-button" onclick="openCart()">
-        Cart <span class="cart-count" id="cartCount">0</span>
-      </button>
-    </div>
+ <div class="container nav">
+  <a class="brand" href="#">
+   JAIPUR <span class="gold">MOBILE HUB</span>
+   <small>REFURBISHED IPHONES</small>
+  </a>
+  <div class="nav-right">
+   <a class="nav-link" href="#shop">Shop iPhones</a>
+   <a class="nav-link" href="#queries">Queries</a>
   </div>
+ </div>
 </header>
 
 <main>
-  <section class="container hero">
-    <div>
-      <div class="eyebrow">Premium refurbished collection</div>
-      <h1>Apple experience.<br><span class="gold">Smarter prices.</span></h1>
-      <p>
-        Explore refurbished iPhones at Jaipur Mobile Hub.
-        Browse models, compare specifications and add your favourite device to the cart.
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="#shop">Explore iPhones</a>
-        <a class="btn-outline" href="#about">About our store</a>
-      </div>
-    </div>
-    <div class="hero-art" aria-label="Decorative phone illustration">
-      <div class="hero-seal">JMH</div>
-    </div>
-  </section>
+<section class="container hero">
+ <div>
+  <div class="eyebrow">Premium refurbished collection</div>
+  <h1>Apple experience.<br><span class="gold">Smarter prices.</span></h1>
+  <p>Explore refurbished iPhones at Jaipur Mobile Hub. Browse models, compare specifications and choose your favourite device.</p>
+  <div class="hero-actions">
+   <a class="btn" href="#shop">Explore iPhones</a>
+   <a class="btn-outline" href="#about">About our store</a>
+  </div>
+ </div>
+ <div class="hero-art"><div class="hero-seal">JMH</div></div>
+</section>
 
-  <section class="container trust">
-    <div class="trust-item"><strong>Selected Devices</strong><span>Browse listed models</span></div>
-    <div class="trust-item"><strong>Clear Pricing</strong><span>Prices shown per phone</span></div>
-    <div class="trust-item"><strong>Easy Shopping</strong><span>Search and compare</span></div>
-  </section>
+<section class="container trust">
+ <div class="trust-item"><strong>Selected Devices</strong><span>Browse listed models</span></div>
+ <div class="trust-item"><strong>₹550 Advance</strong><span>Only one-time advance</span></div>
+ <div class="trust-item"><strong>Balance on Delivery</strong><span>Pay remaining amount later</span></div>
+</section>
 
-  <section class="container shop" id="shop">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">The collection</div>
-        <h2>Find your <span class="gold">iPhone.</span></h2>
-        <p class="section-sub">Choose a model that suits you.</p>
-      </div>
-      <span class="gold" id="resultCount">12 devices</span>
-    </div>
+<section class="container shop" id="shop">
+ <div class="section-head">
+  <div>
+   <div class="eyebrow">The collection</div>
+   <h2>Find your <span class="gold">iPhone.</span></h2>
+   <p class="section-sub">Choose a model that suits you.</p>
+  </div>
+  <span class="gold" id="resultCount">12 devices</span>
+ </div>
 
-    <div class="filters">
-      <input class="control" id="searchInput" type="search"
-        placeholder="Search model or colour..." aria-label="Search iPhones">
+ <div class="filters">
+  <input class="control" id="searchInput" type="search" placeholder="Search model or colour..." aria-label="Search iPhones">
+  <select class="control" id="modelFilter" aria-label="Filter by model">
+   <option value="all">All models</option>
+   <option>iPhone SE</option><option>iPhone 8</option><option>iPhone XS</option>
+   <option>iPhone 11</option><option>iPhone 12</option><option>iPhone 12 Pro</option>
+   <option>iPhone 13</option><option>iPhone 13 Pro</option><option>iPhone 14 Pro</option>
+   <option>iPhone 15</option><option>iPhone 15 Pro</option><option>iPhone 16 Pro</option>
+  </select>
+  <select class="control" id="sortFilter" aria-label="Sort products">
+   <option value="default">Featured</option>
+   <option value="low">Price: low to high</option>
+   <option value="high">Price: high to low</option>
+   <option value="name">Name: A to Z</option>
+  </select>
+ </div>
 
-      <select class="control" id="modelFilter" aria-label="Filter by model">
-        <option value="all">All models</option>
-        <option value="iPhone SE">iPhone SE</option>
-        <option value="iPhone 8">iPhone 8</option>
-        <option value="iPhone XS">iPhone XS</option>
-        <option value="iPhone 11">iPhone 11</option>
-        <option value="iPhone 12">iPhone 12</option>
-        <option value="iPhone 12 Pro">iPhone 12 Pro</option>
-        <option value="iPhone 13">iPhone 13</option>
-        <option value="iPhone 13 Pro">iPhone 13 Pro</option>
-        <option value="iPhone 14 Pro">iPhone 14 Pro</option>
-        <option value="iPhone 15">iPhone 15</option>
-        <option value="iPhone 15 Pro">iPhone 15 Pro</option>
-        <option value="iPhone 16 Pro">iPhone 16 Pro</option>
-      </select>
+ <div class="product-grid" id="productGrid"></div>
+ <div class="notice"><strong class="gold">Please note:</strong> Confirm the actual device, condition, availability and final price with the store before purchase. Product photos should be checked against the actual phone being sold.</div>
+</section>
 
-      <select class="control" id="sortFilter" aria-label="Sort products">
-        <option value="default">Featured</option>
-        <option value="low">Price: low to high</option>
-        <option value="high">Price: high to low</option>
-        <option value="name">Name: A to Z</option>
-      </select>
-    </div>
+<section class="container query-section" id="queries">
+ <div class="eyebrow">Need help?</div>
+ <h2 style="margin-top:10px">Have a <span class="gold">question?</span></h2>
+ <p class="section-sub" style="margin-bottom:20px">Send your query directly to Jaipur Mobile Hub on WhatsApp.</p>
+ <div class="content-panel">
+  <form id="queryForm">
+   <div class="form-group"><label for="queryName">Your name</label><input class="control" id="queryName" required maxlength="100" placeholder="Enter your name"></div>
+   <div class="form-group"><label for="queryPhone">Mobile number</label><input class="control" id="queryPhone" required inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit mobile number"></div>
+   <div class="form-group"><label for="queryMessage">Your question</label><textarea class="control" id="queryMessage" required maxlength="1000" placeholder="Write your question here..."></textarea></div>
+   <button class="btn full-btn" type="submit">Send Query on WhatsApp</button>
+  </form>
+  <p class="form-note">WhatsApp will open with your query. Press Send in WhatsApp to submit it.</p>
+ </div>
+</section>
 
-    <div class="product-grid" id="productGrid"></div>
-
-    <div class="notice">
-      <strong class="gold">Please note:</strong>
-      Confirm the actual device, condition, availability and final price with the store before purchase.
-      Product illustrations are decorative, not photographs of the individual phones.
-    </div>
-  </section>
-
-  <section class="container query-section" id="queries">
-    <div class="eyebrow">Need help?</div>
-    <h2 style="margin-top:10px">Have a <span class="gold">question?</span></h2>
-    <p class="section-sub" style="margin-bottom:20px">
-      Send your query directly to Jaipur Mobile Hub on WhatsApp.
-    </p>
-
-    <div class="content-panel">
-      <form id="queryForm">
-        <div class="form-group">
-          <label for="queryName">Your name</label>
-          <input class="control" id="queryName" required maxlength="100"
-            placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label for="queryPhone">Mobile number</label>
-          <input class="control" id="queryPhone" required inputmode="numeric"
-            pattern="[6-9][0-9]{9}" maxlength="10"
-            placeholder="10-digit mobile number">
-        </div>
-        <div class="form-group">
-          <label for="queryMessage">Your question</label>
-          <textarea class="control" id="queryMessage" required maxlength="1000"
-            placeholder="Write your question here..."></textarea>
-        </div>
-        <button class="btn full-btn" type="submit">Send Query on WhatsApp</button>
-      </form>
-      <p class="form-note">
-        WhatsApp will open with your query. Please press Send in WhatsApp to submit it.
-      </p>
-    </div>
-  </section>
-
-  <section class="container about" id="about">
-    <div class="eyebrow">Jaipur Mobile Hub</div>
-    <h2 style="margin-top:10px">A simpler way to <span class="gold">shop.</span></h2>
-    <p class="section-sub" style="max-width:650px;margin-top:12px">
-      Browse listed devices, review your cart and view the payment QR during checkout.
-      Contact the store to confirm availability and payment before completing your order.
-    </p>
-  </section>
+<section class="container about" id="about">
+ <div class="eyebrow">Jaipur Mobile Hub</div>
+ <h2 style="margin-top:10px">A simpler way to <span class="gold">shop.</span></h2>
+ <p class="section-sub" style="max-width:650px;margin-top:12px">Browse listed devices, view product photos and place an order with a ₹550 advance payment. Remaining payment is due on delivery.</p>
+</section>
 </main>
 
 <footer>
-  <div class="container footer-row">
-    <div>
-      <strong class="gold">JAIPUR MOBILE HUB</strong>
-      <div>Refurbished iPhones</div>
-      <div>WhatsApp: +91 70235 04366</div>
-    </div>
-
-    <!-- Chhirush Web Developer details -->
-    <div>
-      <strong class="gold">WEBSITE DEVELOPER</strong>
-      <div>Chhirush Web Developer</div>
-      <div>Mohit Kumar</div>
-      <div>Email:
-        <a href="mailto:mohitkumar28112008@gmail.com">
-          mohitkumar28112008@gmail.com
-        </a>
-      </div>
-      <div>Phone:
-        <a href="tel:+919116102041">+91 91161 02041</a>
-      </div>
-    </div>
-
-    <div>© <span id="year"></span> Jaipur Mobile Hub</div>
-  </div>
+ <div class="container footer-row">
+  <div><strong class="gold">JAIPUR MOBILE HUB</strong><div>Refurbished iPhones</div><div>WhatsApp: +91 70235 04366</div></div>
+  <div><strong class="gold">WEBSITE DEVELOPER</strong><div>Chhirush Web Developer</div><div>Mohit Kumar</div><div>Email: <a href="mailto:mohitkumar28112008@gmail.com">mohitkumar28112008@gmail.com</a></div><div>Phone: <a href="tel:+919116102041">+91 91161 02041</a></div></div>
+  <div>© <span id="year"></span> Jaipur Mobile Hub</div>
+ </div>
 </footer>
 
-<div class="overlay" id="cartOverlay" onclick="overlayClick(event,'cartOverlay')">
-  <aside class="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
-    <div class="drawer-head">
-      <h2>Your Cart</h2>
-      <button class="close-btn" onclick="closeCart()">Close ✕</button>
-    </div>
+<div class="overlay" id="checkoutOverlay" onclick="overlayClick(event,'checkoutOverlay')">
+ <aside class="drawer" role="dialog" aria-modal="true" aria-label="Checkout">
+  <div class="drawer-head"><h2>Checkout</h2><button class="close-btn" onclick="closeCheckout()">Close ✕</button></div>
 
-    <div id="cartItems"></div>
+  <div id="checkoutProduct"></div>
+  <div class="message" id="checkoutPrice"></div>
 
-    <div id="cartTotals" hidden>
-      <div class="total-line"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
-      <div class="total-line"><span>Delivery</span><strong id="delivery">₹0</strong></div>
-      <div class="total-line final"><span>Order total</span><strong id="grandTotal">₹0</strong></div>
-      <button class="btn full-btn" onclick="showCheckout()">Continue to checkout</button>
-      <p class="form-note">Delivery charge: ₹550 per phone. Confirm delivery availability before purchase.</p>
-    </div>
+  <form id="checkoutForm">
+   <div class="form-group"><label for="customerName">Full name</label><input class="control" id="customerName" required maxlength="100" autocomplete="name"></div>
+   <div class="form-group"><label for="customerPhone">Mobile number</label><input class="control" id="customerPhone" required inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel" placeholder="10-digit mobile number"></div>
+   <div class="form-group"><label for="customerPin">PIN code</label><input class="control" id="customerPin" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="postal-code"></div>
+   <div class="form-group"><label for="customerAddress">Full delivery address</label><textarea class="control" id="customerAddress" required maxlength="500" autocomplete="street-address" placeholder="House number, street, area, city, state"></textarea></div>
+   <button class="btn full-btn" type="submit">Continue to Advance Payment</button>
+  </form>
 
-    <section id="checkoutSection" hidden>
-      <hr style="border:0;border-top:1px solid var(--border);margin:24px 0">
-      <h2>Checkout</h2>
-      <p class="section-sub">Enter your details and review your order.</p>
-
-      <form id="checkoutForm">
-        <div class="form-group">
-          <label for="customerName">Full name</label>
-          <input class="control" id="customerName" required maxlength="100" autocomplete="name">
-        </div>
-        <div class="form-group">
-          <label for="customerPhone">Mobile number</label>
-          <input class="control" id="customerPhone" required inputmode="numeric"
-            pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel"
-            placeholder="10-digit mobile number">
-        </div>
-        <div class="form-group">
-          <label for="customerPin">PIN code</label>
-          <input class="control" id="customerPin" required inputmode="numeric"
-            pattern="[0-9]{6}" maxlength="6" autocomplete="postal-code">
-        </div>
-        <div class="form-group">
-          <label for="customerAddress">Full delivery address</label>
-          <textarea class="control" id="customerAddress" required maxlength="500"
-            autocomplete="street-address"
-            placeholder="House number, street, area, city, state"></textarea>
-        </div>
-        <button class="btn full-btn" type="submit">Review and show payment QR</button>
-      </form>
-
-      <div id="orderReview" hidden>
-        <div class="message" id="reviewDetails"></div>
-
-        <div class="payment-box">
-          <h3 class="gold">Scan to Pay with PhonePe</h3>
-          <p class="section-sub">Order total: <strong id="paymentTotal" class="gold"></strong></p>
-          <img class="qr-image"
-            src="images/phonepe-qr.png"
-            alt="PhonePe payment QR code"
-            onerror="this.hidden=true;document.getElementById('qrError').hidden=false">
-
-          <p id="qrError" class="payment-warning" hidden>
-            QR image not found. Please check that images/phonepe-qr.png exists in your project folder.
-          </p>
-
-          <p class="form-note">
-            Open your payment app and scan this QR code. Before paying, check the recipient name and amount in the payment app.
-          </p>
-          <p class="payment-warning">
-            This website cannot verify payment automatically. Do not treat this screen as order confirmation.
-          </p>
-        </div>
-
-        <div class="form-group">
-          <label for="paymentScreenshot">Upload payment screenshot</label>
-          <input class="control file-input" id="paymentScreenshot"
-            type="file" accept="image/*" required>
-          <p class="form-note">Choose a payment screenshot from your device. Image sharing depends on browser and device support.</p>
-        </div>
-
-        <button class="btn full-btn" type="button" onclick="sendOrderOnWhatsApp()">
-          Share Order & Screenshot
-        </button>
-
-        <p class="form-note" id="shareStatus">
-          WhatsApp or your device's share menu will open. Review the details and press Send yourself.
-        </p>
-      </div>
-
-      <p class="form-note">
-        Demo checkout: this page does not save orders to a server or verify payments.
-        The screenshot is shared from your device; it is not uploaded to this website's server.
-      </p>
-    </section>
-  </aside>
+  <div id="orderReview" hidden>
+   <div class="message" id="reviewDetails"></div>
+   <div class="payment-box">
+    <h3 class="gold">₹550 Advance Payment Only</h3>
+    <p class="section-sub">Pay this amount now using PhonePe.</p>
+    <img class="qr-image" src="images/phonepe-qr.png" alt="PhonePe payment QR code" onerror="this.hidden=true;document.getElementById('qrError').hidden=false">
+    <p id="qrError" class="payment-warning" hidden>QR image not found. Check images/phonepe-qr.png in your project.</p>
+    <p class="form-note">Scan the QR and enter ₹550 as the payment amount if your QR does not contain a fixed amount. Check recipient name and amount in your payment app before paying.</p>
+    <p class="payment-warning">Remaining amount is payable on delivery. This website cannot verify payment automatically.</p>
+   </div>
+   <div class="form-group">
+    <label for="paymentScreenshot">Upload ₹550 payment screenshot</label>
+    <input class="control file-input" id="paymentScreenshot" type="file" accept="image/*">
+    <p class="form-note">Select the payment screenshot from your device.</p>
+   </div>
+   <button class="btn full-btn" type="button" onclick="sendOrderOnWhatsApp()">Share Order & Screenshot</button>
+   <p class="form-note" id="shareStatus">WhatsApp or your device share menu will open. Review the details and press Send yourself.</p>
+  </div>
+  <p class="form-note">Demo checkout: this page does not save orders to a server or verify payments. The screenshot is shared from your device, not uploaded to this website.</p>
+ </aside>
 </div>
 
 <div class="overlay" id="detailOverlay" onclick="overlayClick(event,'detailOverlay')">
-  <aside class="drawer" role="dialog" aria-modal="true" aria-label="Product details">
-    <div class="drawer-head">
-      <h2>Device details</h2>
-      <button class="close-btn" onclick="closeDetails()">Close ✕</button>
-    </div>
-    <div id="detailContent"></div>
-  </aside>
+ <aside class="drawer" role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="drawer-head"><h2>Product Gallery</h2><button class="close-btn" onclick="closeDetails()">Close ✕</button></div>
+  <div id="detailContent"></div>
+ </aside>
 </div>
 
 <script>
-const DELIVERY_PER_PHONE = 550;
-const WHATSAPP_NUMBER = "917023504366";
+const WHATSAPP_NUMBER="917023504366";
+const ADVANCE_AMOUNT=550;
 
-const products = [
-  {
-    id:"se", name:"iPhone SE", storage:"64 GB", colour:"Cream",
-    condition:"Excellent", price:1200, tag:"Compact",
-    description:"iPhone SE in Cream colour."
-  },
-  {
-    id:"8", name:"iPhone 8", storage:"64 GB", colour:"Cream",
-    condition:"Excellent", price:1300, tag:"Classic",
-    description:"iPhone 8 in Cream colour."
-  },
-  {
-    id:"xs", name:"iPhone XS", storage:"64 GB", colour:"White",
-    condition:"Excellent", price:2100, tag:"Classic",
-    description:"iPhone XS in White colour."
-  },
-  {
-    id:"11", name:"iPhone 11", storage:"64 GB", colour:"Black",
-    condition:"Excellent", price:1600, tag:"Popular",
-    description:"iPhone 11 in Black colour."
-  },
-  {
-    id:"12", name:"iPhone 12", storage:"64 GB", colour:"White",
-    condition:"Excellent", price:2500, tag:"Classic",
-    description:"iPhone 12 in White colour."
-  },
-  {
-    id:"12pro", name:"iPhone 12 Pro", storage:"128 GB", colour:"White",
-    condition:"Good", price:3500, tag:"Pro",
-    description:"iPhone 12 Pro in White colour."
-  },
-  {
-    id:"13", name:"iPhone 13", storage:"128 GB", colour:"Blue",
-    condition:"Good", price:4000, tag:"Popular",
-    description:"iPhone 13 in Blue colour."
-  },
-  {
-    id:"13pro", name:"iPhone 13 Pro", storage:"128 GB", colour:"White",
-    condition:"Excellent", price:5000, tag:"Pro",
-    description:"iPhone 13 Pro in White colour."
-  },
-  {
-    id:"14pro", name:"iPhone 14 Pro", storage:"256 GB", colour:"Purple",
-    condition:"Excellent", price:8500, tag:"Pro",
-    description:"iPhone 14 Pro in Purple colour."
-  },
-  {
-    id:"15", name:"iPhone 15", storage:"128 GB", colour:"White",
-    condition:"Excellent", price:10000, tag:"Modern",
-    description:"iPhone 15 in White colour."
-  },
-  {
-    id:"15pro", name:"iPhone 15 Pro", storage:"256 GB", colour:"White",
-    condition:"Good", price:9000, tag:"Pro",
-    description:"iPhone 15 Pro in White colour."
-  },
-  {
-    id:"16pro", name:"iPhone 16 Pro", storage:"512 GB", colour:"Cream",
-    condition:"Excellent", price:12000, tag:"Latest",
-    description:"iPhone 16 Pro in Cream colour."
-  }
+const products=[
+ {id:"se",name:"iPhone SE",storage:"64 GB",colour:"Cream",condition:"Excellent",price:1200,tag:"Compact"},
+ {id:"8",name:"iPhone 8",storage:"64 GB",colour:"Cream",condition:"Excellent",price:1300,tag:"Classic"},
+ {id:"xs",name:"iPhone XS",storage:"64 GB",colour:"White",condition:"Excellent",price:2100,tag:"Classic"},
+ {id:"11",name:"iPhone 11",storage:"64 GB",colour:"Black",condition:"Excellent",price:1600,tag:"Popular"},
+ {id:"12",name:"iPhone 12",storage:"64 GB",colour:"White",condition:"Excellent",price:2500,tag:"Classic"},
+ {id:"12pro",name:"iPhone 12 Pro",storage:"128 GB",colour:"White",condition:"Good",price:3500,tag:"Pro"},
+ {id:"13",name:"iPhone 13",storage:"128 GB",colour:"Blue",condition:"Good",price:4000,tag:"Popular"},
+ {id:"13pro",name:"iPhone 13 Pro",storage:"128 GB",colour:"White",condition:"Excellent",price:5000,tag:"Pro"},
+ {id:"14pro",name:"iPhone 14 Pro",storage:"256 GB",colour:"Purple",condition:"Excellent",price:8500,tag:"Pro"},
+ {id:"15",name:"iPhone 15",storage:"128 GB",colour:"White",condition:"Excellent",price:10000,tag:"Modern"},
+ {id:"15pro",name:"iPhone 15 Pro",storage:"256 GB",colour:"White",condition:"Good",price:9000,tag:"Pro"},
+ {id:"16pro",name:"iPhone 16 Pro",storage:"512 GB",colour:"Cream",condition:"Excellent",price:12000,tag:"Latest"}
 ];
 
-let cart = {};
-let currentOrderText = "";
+let selectedProduct=null;
+let currentOrderText="";
+let activeGalleryIndex=0;
 
-const money = amount => "₹" + amount.toLocaleString("en-IN");
+const money=n=>"₹"+n.toLocaleString("en-IN");
 
-function escapeHTML(value) {
-  return String(value).replace(/[&<>"']/g, char => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  })[char]);
+function escapeHTML(value){
+ return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 
-function productVisual() {
-  return `<div class="phone-illustration" aria-label="Decorative phone illustration">JMH</div>`;
+/* Each product uses 4 local photos:
+   images/products/iphone-se-1.jpg through iphone-se-4.jpg
+   Replace/add actual shop photos with these filenames.
+*/
+function photoPaths(product){
+ const slug=product.id==="se"?"iphone-se":"iphone-"+product.id;
+ return [1,2,3,4].map(n=>`images/products/${slug}-${n}.jpg`);
 }
 
-function renderProducts() {
-  const query = document.getElementById("searchInput").value.trim().toLowerCase();
-  const model = document.getElementById("modelFilter").value;
-  const sort = document.getElementById("sortFilter").value;
-
-  let list = products.filter(product => {
-    const text = (product.name+" "+product.colour+" "+product.storage).toLowerCase();
-    const matchesText = text.includes(query);
-    const matchesModel = model === "all" || product.name === model;
-    return matchesText && matchesModel;
-  });
-
-  if (sort === "low") list.sort((a,b) => a.price-b.price);
-  if (sort === "high") list.sort((a,b) => b.price-a.price);
-  if (sort === "name") list.sort((a,b) => a.name.localeCompare(b.name));
-
-  document.getElementById("resultCount").textContent =
-    list.length+(list.length===1 ? " device" : " devices");
-
-  const grid = document.getElementById("productGrid");
-
-  if (!list.length) {
-    grid.innerHTML = `<div class="empty-state">No matching iPhones found. Try another search.</div>`;
-    return;
-  }
-
-  grid.innerHTML = list.map(product => `
-    <article class="product-card">
-      <div class="product-art">
-        <span class="product-tag">${escapeHTML(product.tag)}</span>
-        ${productVisual()}
-      </div>
-      <div class="product-info">
-        <h3>${escapeHTML(product.name)}</h3>
-        <div class="specs">${escapeHTML(product.storage)} · ${escapeHTML(product.colour)}</div>
-        <div class="spec-row"><span>Listed condition</span><span>${escapeHTML(product.condition)}</span></div>
-        <div class="price-row">
-          <div class="price">${money(product.price)}</div>
-          <button class="add-btn" onclick="addToCart('${product.id}')">+ Add</button>
-        </div>
-        <button class="details-btn" onclick="showDetails('${product.id}')">View device details</button>
-      </div>
-    </article>
-  `).join("");
+function imageHTML(product,index,extraClass=""){
+ const src=photoPaths(product)[index];
+ return `<img class="${extraClass}" src="${src}" alt="${escapeHTML(product.name)} photo ${index+1}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder" style="display:none"> ${escapeHTML(product.name)} <small style="display:block;font-size:10px">PHOTO ${index+1}</small></div>`;
 }
 
-function addToCart(id) {
-  cart[id] = (cart[id] || 0)+1;
-  updateCart();
-  openCart();
+function renderProducts(){
+ const query=document.getElementById("searchInput").value.trim().toLowerCase();
+ const model=document.getElementById("modelFilter").value;
+ const sort=document.getElementById("sortFilter").value;
+
+ let list=products.filter(p=>{
+  const text=(p.name+" "+p.colour+" "+p.storage).toLowerCase();
+  return text.includes(query)&&(model==="all"||p.name===model);
+ });
+
+ if(sort==="low")list.sort((a,b)=>a.price-b.price);
+ if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ if(sort==="name")list.sort((a,b)=>a.name.localeCompare(b.name));
+
+ document.getElementById("resultCount").textContent=list.length+(list.length===1?" device":" devices");
+ const grid=document.getElementById("productGrid");
+
+ if(!list.length){
+  grid.innerHTML='<div class="empty-state">No matching iPhones found. Try another search.</div>';
+  return;
+ }
+
+ grid.innerHTML=list.map(p=>`
+  <article class="product-card">
+   <div class="product-art">
+    <span class="product-tag">${escapeHTML(p.tag)}</span>
+    ${imageHTML(p,0)}
+   </div>
+   <div class="product-info">
+    <h3>${escapeHTML(p.name)}</h3>
+    <div class="specs">${escapeHTML(p.storage)} · ${escapeHTML(p.colour)}</div>
+    <div class="spec-row"><span>Condition</span><span>${escapeHTML(p.condition)}</span></div>
+    <div class="price-row">
+     <div class="price">${money(p.price)}</div>
+     <button class="buy-btn" onclick="buyNow('${p.id}')">Buy Now</button>
+    </div>
+    <button class="details-btn" onclick="showDetails('${p.id}')">View 4 Photos & Details</button>
+   </div>
+  </article>
+ `).join("");
 }
 
-function changeQty(id, change) {
-  cart[id] = (cart[id] || 0)+change;
-  if (cart[id] <= 0) delete cart[id];
-  updateCart();
+function buyNow(id){
+ selectedProduct=products.find(p=>p.id===id);
+ if(!selectedProduct)return;
+ document.getElementById("checkoutProduct").innerHTML=`
+  <div class="product-art" style="height:180px;border-radius:10px">
+   ${imageHTML(selectedProduct,0)}
+  </div>
+  <h3 style="margin-top:12px">${escapeHTML(selectedProduct.name)}</h3>
+  <p class="section-sub">${escapeHTML(selectedProduct.storage)} · ${escapeHTML(selectedProduct.colour)} · ${escapeHTML(selectedProduct.condition)}</p>`;
+ updateCheckoutPrice();
+ document.getElementById("checkoutForm").hidden=false;
+ document.getElementById("orderReview").hidden=true;
+ document.getElementById("checkoutOverlay").classList.add("open");
 }
 
-function removeItem(id) {
-  delete cart[id];
-  updateCart();
+function updateCheckoutPrice(){
+ if(!selectedProduct)return;
+ const total=selectedProduct.price;
+ const advance=Math.min(ADVANCE_AMOUNT,total);
+ const remaining=total-advance;
+ document.getElementById("checkoutPrice").innerHTML=`
+  <div class="total-line"><span>Product total</span><strong>${money(total)}</strong></div>
+  <div class="total-line"><span>Advance payable now</span><strong class="gold">${money(advance)}</strong></div>
+  <div class="total-line final"><span>Remaining on delivery</span><strong>${money(remaining)}</strong></div>`;
 }
 
-function cartProducts() {
-  return products.filter(product => cart[product.id] > 0);
+function closeCheckout(){document.getElementById("checkoutOverlay").classList.remove("open")}
+function closeDetails(){document.getElementById("detailOverlay").classList.remove("open")}
+
+function overlayClick(event,id){
+ if(event.target.id===id)document.getElementById(id).classList.remove("open");
 }
 
-function cartSummary() {
-  const items = cartProducts();
-  const count = items.reduce((sum,p) => sum+cart[p.id],0);
-  const subtotal = items.reduce((sum,p) => sum+p.price*cart[p.id],0);
-  const delivery = count*DELIVERY_PER_PHONE;
-  return {items,count,subtotal,delivery,total:subtotal+delivery};
+function showDetails(id){
+ const p=products.find(x=>x.id===id);
+ if(!p)return;
+ activeGalleryIndex=0;
+ const paths=photoPaths(p);
+
+ document.getElementById("detailContent").innerHTML=`
+  <div class="gallery-main" id="galleryMain">${imageHTML(p,0)}</div>
+  <div class="gallery-thumbs">
+   ${paths.map((src,i)=>`
+    <button class="gallery-thumb ${i===0?"active":""}" onclick="changeGallery('${p.id}',${i})" aria-label="View photo ${i+1}">
+     <img src="${src}" alt="Photo ${i+1}" onerror="this.style.opacity='.15'">
+    </button>`).join("")}
+  </div>
+  <h2 style="margin-top:20px">${escapeHTML(p.name)}</h2>
+  <p class="section-sub">${escapeHTML(p.storage)} · ${escapeHTML(p.colour)}</p>
+  <div class="spec-row"><span>Condition</span><span>${escapeHTML(p.condition)}</span></div>
+  <div class="detail-price">${money(p.price)}</div>
+  <p class="form-note">Advance payment: ₹550. Remaining amount payable on delivery.</p>
+  <button class="btn full-btn" onclick="closeDetails();buyNow('${p.id}')">Buy Now</button>`;
+ document.getElementById("detailOverlay").classList.add("open");
 }
 
-function updateCart() {
-  const {items,count,subtotal,delivery,total} = cartSummary();
-
-  document.getElementById("cartCount").textContent = count;
-  document.getElementById("cartItems").innerHTML = items.length
-    ? items.map(product => `
-      <div class="cart-item">
-        <div>
-          <strong>${escapeHTML(product.name)}</strong>
-          <small>${escapeHTML(product.storage)} · ${escapeHTML(product.colour)}</small>
-          <small>${money(product.price)} each</small>
-          <div class="qty">
-            <button aria-label="Decrease quantity" onclick="changeQty('${product.id}',-1)">−</button>
-            <span>${cart[product.id]}</span>
-            <button aria-label="Increase quantity" onclick="changeQty('${product.id}',1)">+</button>
-          </div>
-          <button class="remove-btn" onclick="removeItem('${product.id}')">Remove</button>
-        </div>
-        <strong>${money(product.price*cart[product.id])}</strong>
-      </div>
-    `).join("")
-    : `<p class="form-note">Your cart is empty. Add an iPhone to get started.</p>`;
-
-  document.getElementById("cartTotals").hidden = !items.length;
-  document.getElementById("subtotal").textContent = money(subtotal);
-  document.getElementById("delivery").textContent = money(delivery);
-  document.getElementById("grandTotal").textContent = money(total);
-
-  if (!items.length) {
-    document.getElementById("checkoutSection").hidden = true;
-    document.getElementById("orderReview").hidden = true;
-  }
-}
-
-function openCart() {
-  document.getElementById("cartOverlay").classList.add("open");
-}
-
-function closeCart() {
-  document.getElementById("cartOverlay").classList.remove("open");
-}
-
-function closeDetails() {
-  document.getElementById("detailOverlay").classList.remove("open");
-}
-
-function overlayClick(event,id) {
-  if (event.target.id === id) {
-    document.getElementById(id).classList.remove("open");
-  }
-}
-
-function showCheckout() {
-  document.getElementById("checkoutSection").hidden = false;
-  document.getElementById("orderReview").hidden = true;
-  document.getElementById("checkoutSection").scrollIntoView({behavior:"smooth",block:"start"});
-}
-
-function showDetails(id) {
-  const product = products.find(item => item.id === id);
-  if (!product) return;
-
-  document.getElementById("detailContent").innerHTML = `
-    <div class="product-art" style="border-radius:12px">${productVisual()}</div>
-    <h2 style="margin-top:20px">${escapeHTML(product.name)}</h2>
-    <p class="section-sub">${escapeHTML(product.description)}</p>
-    <div class="spec-row"><span>Storage</span><span>${escapeHTML(product.storage)}</span></div>
-    <div class="spec-row"><span>Colour</span><span>${escapeHTML(product.colour)}</span></div>
-    <div class="spec-row"><span>Listed condition</span><span>${escapeHTML(product.condition)}</span></div>
-    <div class="price" style="margin-top:18px">${money(product.price)}</div>
-    <p class="form-note">Delivery: ${money(DELIVERY_PER_PHONE)} per phone.</p>
-    <button class="btn full-btn" onclick="closeDetails();addToCart('${product.id}')">Add to cart</button>
-  `;
-  document.getElementById("detailOverlay").classList.add("open");
+function changeGallery(id,index){
+ const p=products.find(x=>x.id===id);
+ if(!p)return;
+ const main=document.getElementById("galleryMain");
+ main.innerHTML=imageHTML(p,index);
+ document.querySelectorAll(".gallery-thumb").forEach((el,i)=>el.classList.toggle("active",i===index));
+ activeGalleryIndex=index;
 }
 
 document.getElementById("searchInput").addEventListener("input",renderProducts);
 document.getElementById("modelFilter").addEventListener("change",renderProducts);
 document.getElementById("sortFilter").addEventListener("change",renderProducts);
 
-document.getElementById("queryForm").addEventListener("submit",event => {
-  event.preventDefault();
-
-  const name = document.getElementById("queryName").value.trim();
-  const phone = document.getElementById("queryPhone").value.trim();
-  const query = document.getElementById("queryMessage").value.trim();
-
-  const message =
-`Hello Jaipur Mobile Hub,
-
-I have a query.
-
-Name: ${name}
-Mobile: ${phone}
-
-Question:
-${query}`;
-
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-  window.open(url,"_blank");
+document.getElementById("queryForm").addEventListener("submit",event=>{
+ event.preventDefault();
+ const name=document.getElementById("queryName").value.trim();
+ const phone=document.getElementById("queryPhone").value.trim();
+ const query=document.getElementById("queryMessage").value.trim();
+ const message=`Hello Jaipur Mobile Hub,\n\nI have a query.\nName: ${name}\nMobile: ${phone}\nQuestion: ${query}`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,"_blank");
 });
 
-document.getElementById("checkoutForm").addEventListener("submit",event => {
-  event.preventDefault();
+document.getElementById("checkoutForm").addEventListener("submit",event=>{
+ event.preventDefault();
+ if(!selectedProduct)return;
 
-  const {items,count,subtotal,delivery,total} = cartSummary();
-  if (!items.length) return;
+ const name=document.getElementById("customerName").value.trim();
+ const phone=document.getElementById("customerPhone").value.trim();
+ const pin=document.getElementById("customerPin").value.trim();
+ const address=document.getElementById("customerAddress").value.trim();
 
-  const name = document.getElementById("customerName").value.trim();
-  const phone = document.getElementById("customerPhone").value.trim();
-  const pin = document.getElementById("customerPin").value.trim();
-  const address = document.getElementById("customerAddress").value.trim();
+ const total=selectedProduct.price;
+ const advance=Math.min(ADVANCE_AMOUNT,total);
+ const remaining=total-advance;
 
-  const lines = items.map(product =>
-    `${product.name} (${product.storage}, ${product.colour}) × ${cart[product.id]} = ${money(product.price*cart[product.id])}`
-  ).join("\n");
+ currentOrderText=`Hello Jaipur Mobile Hub,\n\nI want to place an order.\n\nCUSTOMER DETAILS\nName: ${name}\nMobile: ${phone}\nAddress: ${address}\nPIN Code: ${pin}\n\nORDER DETAILS\n${selectedProduct.name}\nStorage: ${selectedProduct.storage}\nColour: ${selectedProduct.colour}\nCondition: ${selectedProduct.condition}\nProduct Total: ${money(total)}\nAdvance Payment: ${money(advance)}\nRemaining Payable on Delivery: ${money(remaining)}\n\nPlease confirm the order and payment details.`;
 
-  currentOrderText =
-`Hello Jaipur Mobile Hub,
-
-I want to place an order.
-
-CUSTOMER DETAILS
-Name: ${name}
-Mobile: ${phone}
-Address: ${address}
-PIN Code: ${pin}
-
-ORDER DETAILS
-${lines}
-
-Subtotal: ${money(subtotal)}
-Delivery: ${money(delivery)}
-Order Total: ${money(total)}
-
-Payment screenshot will be shared with this order.
-Please confirm payment and order details.`;
-
-  document.getElementById("reviewDetails").innerHTML = `
-    <strong class="gold">Order summary preview</strong>
-    <p style="white-space:pre-line;margin-top:8px">${escapeHTML(lines)}</p>
-    <p style="margin-top:8px">Customer: ${escapeHTML(name)}</p>
-    <p>Mobile: ${escapeHTML(phone)}</p>
-    <p>Address: ${escapeHTML(address)}, ${escapeHTML(pin)}</p>
-    <p>Subtotal: ${money(subtotal)}</p>
-    <p>Delivery: ${money(delivery)}</p>
-    <p><strong>Order total: ${money(total)}</strong></p>
-  `;
-
-  document.getElementById("paymentTotal").textContent = money(total);
-  document.getElementById("orderReview").hidden = false;
-  document.getElementById("orderReview").scrollIntoView({behavior:"smooth",block:"start"});
+ document.getElementById("reviewDetails").innerHTML=`
+  <strong class="gold">Order summary</strong>
+  <p style="margin-top:8px">${escapeHTML(selectedProduct.name)}</p>
+  <p>Customer: ${escapeHTML(name)}</p>
+  <p>Mobile: ${escapeHTML(phone)}</p>
+  <p>Address: ${escapeHTML(address)}, ${escapeHTML(pin)}</p>
+  <p>Product total: ${money(total)}</p>
+  <p>Advance payable now: <strong class="gold">${money(advance)}</strong></p>
+  <p>Remaining on delivery: <strong>${money(remaining)}</strong></p>`;
+ document.getElementById("checkoutForm").hidden=true;
+ document.getElementById("orderReview").hidden=false;
+ document.getElementById("orderReview").scrollIntoView({behavior:"smooth",block:"start"});
 });
 
-async function sendOrderOnWhatsApp() {
-  const screenshotInput = document.getElementById("paymentScreenshot");
-  const status = document.getElementById("shareStatus");
+async function sendOrderOnWhatsApp(){
+ const input=document.getElementById("paymentScreenshot");
+ const status=document.getElementById("shareStatus");
 
-  if (!screenshotInput.files || !screenshotInput.files.length) {
-    alert("Please upload your payment screenshot first.");
-    screenshotInput.focus();
-    return;
+ if(!input.files||!input.files.length){
+  alert("Please upload your ₹550 payment screenshot first.");
+  input.focus();
+  return;
+ }
+ const file=input.files[0];
+ if(!file.type.startsWith("image/")){
+  alert("Please select an image file.");
+  return;
+ }
+ if(file.size>8*1024*1024){
+  alert("Please select an image smaller than 8 MB.");
+  return;
+ }
+
+ try{
+  if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
+   await navigator.share({title:"Jaipur Mobile Hub Order",text:currentOrderText,files:[file]});
+   status.textContent="Share menu opened. Select WhatsApp, review the message and screenshot, then press Send.";
+  }else{
+   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(currentOrderText)}`,"_blank");
+   status.textContent="WhatsApp opened. Attach the selected screenshot manually and press Send.";
   }
-
-  const file = screenshotInput.files[0];
-
-  if (!file.type.startsWith("image/")) {
-    alert("Please select an image file for the payment screenshot.");
-    return;
+ }catch(error){
+  if(error.name!=="AbortError"){
+   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(currentOrderText)}`,"_blank");
+   status.textContent="WhatsApp opened. If the screenshot did not attach, add it manually before sending.";
   }
-
-  if (file.size > 8 * 1024 * 1024) {
-    alert("Please select an image smaller than 8 MB.");
-    return;
-  }
-
-  const shareText = currentOrderText;
-
-  try {
-    if (navigator.share && navigator.canShare &&
-        navigator.canShare({files:[file]})) {
-      await navigator.share({
-        title:"Jaipur Mobile Hub Order",
-        text:shareText,
-        files:[file]
-      });
-      status.textContent =
-        "Share menu opened. Select WhatsApp, review the message and screenshot, then press Send.";
-    } else {
-      const whatsappURL =
-        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(shareText)}`;
-      window.open(whatsappURL,"_blank");
-      status.textContent =
-        "WhatsApp opened with your order details. Please attach the selected screenshot in WhatsApp and press Send.";
-    }
-  } catch(error) {
-    if (error.name !== "AbortError") {
-      const whatsappURL =
-        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(shareText)}`;
-      window.open(whatsappURL,"_blank");
-      status.textContent =
-        "WhatsApp opened with order details. If the screenshot did not attach, add it manually before sending.";
-    }
-  }
+ }
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent=new Date().getFullYear();
 renderProducts();
-updateCart();
 </script>
 </body>
 </html>
