@@ -87,7 +87,6 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
 .payment-warning{color:#e8c98a;font-size:12px;margin-top:10px}
 .file-input{padding:10px}
 
-/* Updated product gallery: show complete photo without cropping */
 .gallery-main{
  height:420px;
  min-height:260px;
@@ -161,7 +160,7 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
  h1{letter-spacing:-1px}
  .content-panel{padding:17px}
 }
-/* Product card ki first photo - complete image */
+
 .product-art {
     height: 280px;
     display: flex;
@@ -309,7 +308,7 @@ footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font
     <p class="form-note">Select the payment screenshot from your device.</p>
    </div>
    <button class="btn full-btn" type="button" onclick="sendOrderOnWhatsApp()">Share Order & Screenshot</button>
-   <p class="form-note" id="shareStatus">WhatsApp or your device share menu will open. Review the details and press Send yourself.</p>
+   <p class="form-note" id="shareStatus">WhatsApp will open directly. Attach your payment screenshot in the chat before sending.</p>
   </div>
   <p class="form-note">Demo checkout: this page does not save orders to a server or verify payments. The screenshot is shared from your device, not uploaded to this website.</p>
  </aside>
@@ -351,10 +350,6 @@ function escapeHTML(value){
  return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 
-/* Each product uses 4 local photos:
-   images/products/iphone-se-1.jpg through iphone-se-4.jpg
-   Replace/add actual shop photos with these filenames.
-*/
 function photoPaths(product){
  const slug=product.id==="se"?"iphone-se":"iphone-"+product.id;
  return [1,2,3,4].map(n=>`images/products/${slug}-${n}.jpg`);
@@ -514,7 +509,7 @@ document.getElementById("checkoutForm").addEventListener("submit",event=>{
  document.getElementById("orderReview").scrollIntoView({behavior:"smooth",block:"start"});
 });
 
-async function sendOrderOnWhatsApp(){
+function sendOrderOnWhatsApp(){
  const input=document.getElementById("paymentScreenshot");
  const status=document.getElementById("shareStatus");
 
@@ -533,20 +528,10 @@ async function sendOrderOnWhatsApp(){
   return;
  }
 
- try{
-  if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
-   await navigator.share({title:"Jaipur Mobile Hub Order",text:currentOrderText,files:[file]});
-   status.textContent="Share menu opened. Select WhatsApp, review the message and screenshot, then press Send.";
-  }else{
-   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(currentOrderText)}`,"_blank");
-   status.textContent="WhatsApp opened. Attach the selected screenshot manually and press Send.";
-  }
- }catch(error){
-  if(error.name!=="AbortError"){
-   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(currentOrderText)}`,"_blank");
-   status.textContent="WhatsApp opened. If the screenshot did not attach, add it manually before sending.";
-  }
- }
+ const message=currentOrderText+"\n\nI have selected my ₹550 payment screenshot. I will attach it in this WhatsApp chat.";
+ const whatsappUrl=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+ status.textContent="Opening the direct Jaipur Mobile Hub WhatsApp chat. Please attach the selected payment screenshot in the chat and press Send.";
+ window.location.href=whatsappUrl;
 }
 
 document.getElementById("year").textContent=new Date().getFullYear();
